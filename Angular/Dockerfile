@@ -4,7 +4,7 @@ FROM codercom/code-server:latest
 RUN mkdir -p /home/coder/repos && \
 	chown coder:coder -R /home/coder/repos
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
+RUN curl -sL https://deb.nodesource.com/setup_15.x -o nodesource_setup.sh
 
 RUN bash nodesource_setup.sh
 RUN sudo apt-get install nodejs
