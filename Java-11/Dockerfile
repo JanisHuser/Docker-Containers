@@ -14,7 +14,7 @@ RUN sudo apt-get install wget
 RUN sudo apt-get install unzip
 #RUN sudo apt-get install gradle -y
 
-ENV GRADLE_VERSION=6.5.1
+ENV GRADLE_VERSION=7.4
 RUN wget https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip -P /tmp
 RUN sudo unzip -d /opt/gradle /tmp/gradle-${GRADLE_VERSION}-bin.zip
 RUN sudo ln -s /opt/gradle/gradle-${GRADLE_VERSION} /opt/gradle/latest
@@ -27,5 +27,6 @@ WORKDIR /home/coder/repos
 
 
 ENV JAVA_HOME /usr/lib/jvm/java-17-openjdk-arm64/bin
+ENV PATH PATH:$GRADLE_HOME/bin
 
 
