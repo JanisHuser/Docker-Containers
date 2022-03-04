@@ -20,4 +20,4 @@ ENV BUILD_AGENT_NAME=RpiJanis
 ENV SERVER_URL=http://ateastarathome.ddns.net:8090
 
 ENV JAVA_HOME /usr/lib/jvm/java-17-openjdk-arm64/bin
-ENV PATH PATH:$GRADLE_HOME/bin
+RUN export PATH=$PATH:$GRADLE_HOME/bin
