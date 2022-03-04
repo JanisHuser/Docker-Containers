@@ -10,6 +10,8 @@ RUN sudo apt-get update
 RUN sudo apt-get install default-jre -y
 RUN sudo apt-get install default-jdk -y
 RUN sudo apt-get install openjdk-17-jre -y
+RUN sudo apt-get install wget
+RUN sudo apt-get install unzip
 #RUN sudo apt-get install gradle -y
 
 ENV GRADLE_VERSION=6.5.1
@@ -25,3 +27,5 @@ WORKDIR /home/coder/repos
 
 
 ENV JAVA_HOME /usr/lib/jvm/java-17-openjdk-arm64/bin
+
+
