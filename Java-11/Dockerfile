@@ -27,6 +27,6 @@ WORKDIR /home/coder/repos
 
 
 ENV JAVA_HOME /usr/lib/jvm/java-17-openjdk-arm64/bin
-RUN export PATH=$PATH:$GRADLE_HOME/bin
 
+ENV PATH="${GRADLE_HOME}/bin:${PATH}"
 
