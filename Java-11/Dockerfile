@@ -16,4 +16,4 @@ VOLUME /home/coder/repos
 WORKDIR /home/coder/repos
 
 
-ENV JAVA_HOME /usr/lib/jvm/java-17-openjdk-arm64/bin/java
+ENV JAVA_HOME /usr/lib/jvm/java-17-openjdk-arm64/bin
