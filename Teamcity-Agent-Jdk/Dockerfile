@@ -1,3 +1,6 @@
+ENV BUILD_AGENT_NAME=RpiJanis
+ENV SERVER_URL=http://ateastarathome.ddns.net:8090
+
 FROM vlrpi/teamcity-agent:ubuntu-bionic-2020.2
 
 RUN sudo apt-get update
