@@ -33,7 +33,7 @@ RUN mkdir -p $MAVEN_HOME $MAVEN_HOME/ref \
   && ln -s $MAVEN_HOME/bin/mvn /usr/bin/mvn
 
 # Install Gradle
-ENV GRADLE_VERSION=6.7
+ENV GRADLE_VERSION=7.4.2
 ARG GRADLE_SHA512=d495bc65379d2a854d2cca843bd2eeb94f381e5a7dcae89e6ceb6ef4c5835524932313e7f30d7a875d5330add37a5fe23447dc3b55b4d95dffffa870c0b24493
 
 ENV GRADLE_HOME /usr/bin/gradle
