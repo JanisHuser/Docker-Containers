@@ -56,7 +56,7 @@ ENV PATH $PATH:$GRADLE_HOME/bin
 
 # Install sume more stuff
 ENV DISPLAY host.docker.internal:0.0
-RUN apt-get install openjfx
+#RUN apt-get install openjfx
 
 # Set back to coder user
 USER coder
